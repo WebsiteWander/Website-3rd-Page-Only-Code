@@ -1,0 +1,47 @@
+/* THIRD PAGE GRID SECTION */
+
+/* ----------------------------------------------------------------- */
+/* MEALS */
+/* ----------------------------------------------------------------- */
+
+
+.section-meals {
+    padding: 0;      /* Takes of extra empty space between the sections */
+}
+
+
+
+.mmeals-showcase {
+    list-style: none;      /* no bullet points in the list */
+    width: 100%;           /* Entire browser width */
+}
+
+
+.meals-showcase li {
+    display: block;
+    float: left;       /* Showing the pictures side-by-side */
+    width: 25%;        /* Width of all the pictures combined is 100% width, so each of 4 pictures is 25% */
+}
+
+
+.meal-photo {
+    width: 100%;            /* This has the exxact width of its parrent i.e. .mmeals-showcase li (width 25%) */
+    margin: 0;
+    overflow: hidden;       /* If the picture's size overflows its container, that is hidden */
+    background-color: #000; /* Background color behind image is black, turning the image darker */
+}
+
+
+.meal-photo img {
+    opacity: 0.7;    /* Makes the photos lighter */
+    width: 100%;     /* Photo is as wide as its container i.e. .meal-photo, i.e. .meals-showcase li (25%) */
+    height: auto;
+    transform: scale(1.15);  /* Zooms in on the photos, in order to use the effect of zooming out on them when hovered over */
+    transition: transform 0.5s, opacity 0.5s; /* The slow transition zooming out effect, and the slow opacity color change to lighter */
+}
+
+
+.meal-photo img:hover {    /* These effects happen when the picture is hovered over */
+    opacity: 1;             /* When image is hovered over, pacity changes to lighter color */
+    transform: scale(1.03);   /* The pictures will return to its regular size when hovered over */
+}
